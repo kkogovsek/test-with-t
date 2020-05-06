@@ -1,0 +1,89 @@
+:root {
+  --keyword: #f1faee;
+  --string: black;
+  --operator: black;
+  --builtin: #49b6ff;
+  --link: blue;
+  --string-2: rgb(53, 163, 47);
+  --tag: black;
+  --comment: black;
+  --error: red;
+}
+
+body {
+  margin: 0;
+  padding: 16px 8px;
+  box-sizing: border-box;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 14px;
+  color: var(--text);
+}
+
+wired-card {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+}
+
+wired-button {
+  margin: 0 8px;
+  text-transform: lowercase;
+}
+
+[keyword] {
+  background: var(--keyword);
+}
+[string] {
+  color: var(--string);
+}
+[operator] {
+  color: var(--operator);
+}
+[builtin] {
+  background: var(--builtin);
+  color: white;
+}
+[link] {
+  color: var(--link);
+  text-decoration: underline;
+}
+[string-2] {
+  color: var(--string-2);
+}
+[tag] {
+  color: var(--tag);
+}
+[comment] {
+  color: var(--comment);
+}
+[error] {
+  color: white;
+  background: var(--error);
+}
+
+[active="true"] {
+  color: white;
+  background: black;
+}
+
+wired-input {
+  font-family: inherit;
+}
+
+tblock {
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+tline {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.CodeMirror {
+  min-height: 100% !important;
+  height: calc(100vh - 80px) !important;
+}
